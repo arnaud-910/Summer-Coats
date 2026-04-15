@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louve Collection</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Helvetica', Arial, sans-serif;
+      background:#b71c1c;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 60px;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    /* Top Navigation */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    /* Main Layout */
+    .hero {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    
+    /* Left model with circle */
+    .left-model {
+      position: relative;
+      flex: 1;
+      
+    }
+.left-model-wrap::after{
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(183, 27, 27, 0.7)0%, rgba(183,28,28,28,0.1)35%, transparent 60%);
+    }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div{
+  display: block;
+  unicode-bidi: isolate;
+}
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background:#b71c1c;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
+  unicode-range: U+0460 -052F, U +1C80 -1C8A, U +20B4, U +2DE0 -2DFF, U +A640-A694, U +FE2E-FE2F;
+}
+    .orange-circle::before {
+      
+      content: '';
+      position: absolute;
+      inset: 30px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 140, 0, 0.08) 0%, transparent 70%);
+    }
+    
+@font-face {
+   font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
+ 
+}
+    .model-small {
+      position: relative;
+      z-index: 2;
+      max-height: 550px;
+      margin-left: 20px;
+    }
+  
+    /* Right side with text + large model */
+    .right-content {
+      flex: 1.2;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .model-large {
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      max-height: 660px;
+    }
+
+    .text-overlay {
+      position: relative;
+      z-index: 2;
+      margin-left: 40px;
+    }
+
+    .text-overlay h1 {
+      font-size: 68px;
+      font-weight: 300;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .text-overlay h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+
+    .text-overlay .size {
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 35px;
+      color: #fff;
+    }
+
+    .text-overlay .new-stock {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .stars {
+      font-size: 24px;
+      letter-spacing: 4px;
+      margin-bottom: 25px;
+      color: #fff;
+    }
+
+    .cta-button {
+      width: 260px;
+      height: 50px;
+      background: #fff;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 800;
+      color: #b71c1c;
+    }
+
+    /* Vertical "NEW" text on right edge */
+    .vertical-text {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-size: 14px;
+      letter-spacing: 8px;
+      color: #fff;
+  
+      }
+      .ticker-wrap{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(#0a0a0a);
+        overflow: hidden;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        z-index: 100;
+      }
+      </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a href="arnaud.html">ORDER</a>
+      <a href="index.html">ORDER</a>
+      <a href="products.html">VISIT</a>
+      <a href="contact.html">WEBSITE</a>
+      <a href="#">BLACK</a>
+      <a href="ishimwe.html">FASHION</a>
+    </nav>
+
+    <div class="hero">
+      <div class="left-model">
+        <div class="left-model wrap"></div>
+        <div class="light-circle"></div>
+ <img src="https://i.pinimg.com/originals/3f/83/bf/3f83bf28acea00b04382bcbc3915bc50.jpg" alt="Model in blazer dress" class="model-small">
+      </div>
+
+      <div class="right-content">
+        <img src="https://i.pinimg.com/originals/3f/83/bf/3f83bf28acea00b04382bcbc3915bc50.jpg" alt="Model close-up" class="model-large">
+        
+        <div class="text-overlay">
+          <h1>SUMMER COATS</h1>
+          <h2>louve collection</h2>
+          <p class="size">size 56i</p>
+          
+          <p class="new-stock">NEW STOCK</p>
+          <div class="stars">★★★★</div>
+          <button class="cta-button">Shop The Collection 
+            
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="vertical-text">
+      NEW NEW NEW
+    </div>
+  </div>
+</body>
+</html>
+
+
